@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Exercicio Bootstrap 2</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+         crossorigin="anonymous"
+      />
+   </head>
+   <body>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-danger m-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Excluir Dados!</button>
+      <!-- Modal excluir dados -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Confirmar exclusao de dados?</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">Ao apagar os dados, os mesmos serao deletados do sistema.</div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Sim</button>
+                  <button type="button" class="btn btn-danger">Nao</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Accordion -->
+      <div class="accordion" id="accordionExample">
+         <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+               <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore id error quod, explicabo dignissimos minus dolores libero at harum incidunt alias nam, laudantium perspiciatis
+                  eligendi maxime quibusdam natus nemo numquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic similique aliquid quas nihil esse aliquam suscipit, fugit, at omnis
+                  assumenda perferendis nemo. Tenetur ad quidem blanditiis facere voluptas voluptate totam. Temporibus enim ducimus, eius vitae provident architecto in? Ratione culpa, consectetur
+                  architecto, vitae adipisci in hic cumque, molestias labore voluptatem ea assumenda! Molestias et pariatur odio laudantium voluptatem. Molestiae, error? Consectetur cupiditate, atque
+                  blanditiis, qui nisi ea facere quibusdam aut commodi distinctio magnam delectus tempora soluta sint. Obcaecati neque praesentium perferendis, deleniti, optio quam, dicta quis
+                  aspernatur aperiam necessitatibus recusandae. Aperiam, debitis fugit natus obcaecati repellat provident amet et aspernatur, enim sunt, aut maxime consequuntur consectetur. Provident
+                  incidunt est repudiandae fuga recusandae velit molestias enim quisquam! Repudiandae quia non nemo. Sint, incidunt veniam placeat perferendis vero eos deserunt totam consequatur odit.
+                  Distinctio veritatis, fugiat repellat rerum culpa aspernatur necessitatibus nihil exercitationem neque. Dolorem eligendi eveniet doloremque nisi iste quia quasi!
+               </div>
+            </div>
+         </div>
+         <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+               <div class="accordion-body"></div>
+            </div>
+         </div>
+         <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"></button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+               <div class="accordion-body"></div>
+            </div>
+         </div>
+      </div>
+      <button type="button" class="btn btn-success m-5" data-bs-toggle="popover" title="Produto disponivel." data-bs-content="Esse produto contem 9 unidades em estoque.">
+         Clique para consultar quantidade
+      </button>
+      <div class="alert alert-primary" role="alert">2^0 = 1</div>
+      <div class="alert alert-secondary" role="alert">2^1 = 2</div>
+      <div class="alert alert-success" role="alert">2^2 = 4</div>
+      <div class="alert alert-danger" role="alert">2^3 = 8</div>
+      <div class="alert alert-warning" role="alert">2^4 = 16</div>
+      <div class="alert alert-info" role="alert">2^5 = 32</div>
+      <div class="alert alert-light" role="alert">2^6 = 64</div>
+      <div class="alert alert-dark" role="alert">2^7 = 128</div>
+      <div id="carouselExampleCaptions" class="carousel slide w-75" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="./img/MTX01_0.jpg.webp" class="d-block w-100 h-100" alt="..." />
+               <div class="carousel-caption d-none d-md-block">
+                  <h5 class="lead display-4">Matrix</h5>
+                  <p>O filme apresenta sobre ...</p>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="./img/16-Frozen_2.jpg" class="d-block w-100 h-100" alt="..." />
+               <div class="carousel-caption d-none d-md-block">
+                  <h5 class="lead display-4">Frozen</h5>
+                  <p>O filme apresenta sobre ...</p>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="./img/fugadasgalinhas.jpg.webp" class="d-block w-100 h-100" alt="..." />
+               <div class="carousel-caption d-none d-md-block">
+                  <h5 class="lead display-4">A fuga das galinhas</h5>
+                  <p>O filme apresenta sobre ...</p>
+               </div>
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+         crossorigin="anonymous"
+      ></script>
+      <script src="./index.js"></script>
+   </body>
+</html>
